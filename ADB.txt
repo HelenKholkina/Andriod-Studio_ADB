@@ -1,0 +1,10 @@
+1) Как начать пользоваться функционалом ADB?
+* должны быть файлы adb и fastboot в папке Sdk/platform-tools (у меня этот путь шел через C:/Users?ElenaEnglish/AppData/Local/Android/Sdk/platform-tools)
+* подключить телефон через USB
+* на телефоне включена отладка по USB
+* в командной строке зайти в папку platform-tools (в ГитБаше так же зайти в эту папку, но команды начинать с ./)
+2) ДЗ:
+установка APK - adb install "C:\Users\ElenaEnglish\Course\Lesson6\001_ToDoList-master copy\app\build\outputs\apk\debug\app-debug.apk.apk" (в кавычках указан путь к файлу APK)
+сделать скриншот экрана - adb shell screencap /sdcard/screenshot.png (screenshot.png - название скриншота; сохраняет в корневую папку)
+перенос файла с телефона на ПК - adb pull /sdcard/screenshot.png C:\Users\ElenaEnglish\Desktop
+перенос файла с ПК на телефон - adb push C:/Users/ElenaEnglish/Desktop/Screenshot_1.png /sdcard/DCIM  
